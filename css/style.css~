@@ -1,0 +1,986 @@
+/*--------------------------------------------------------------------- File Name: style.css ---------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------- import Fonts ---------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*****---------------------------------------- 1) font-family: 'Lato', sans-serif;
+ ----------------------------------------*****/
+
+/* <weight>: Use a value from 100 to 900 */
+/* <uniquifier>: Use a unique and descriptive class name */
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+/*--------------------------------------------------------------------- import Files ---------------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
+
+* {
+    box-sizing: border-box !important;
+    transition: ease all 0.5s;
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #000000;
+    font-size: 14px;
+    font-family: Roboto;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+/*-- links --*/
+a {
+    
+}
+
+/*-- headers --*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+}
+
+h1 {
+    font-size: 30px
+}
+
+h2 {
+    font-size: 24px
+}
+
+h3 {
+    font-size: 20px
+}
+
+h4 {
+    font-size: 18px
+}
+
+h5 {
+    font-size: 16px
+}
+
+h6 {
+    font-size: 15px
+}
+
+/*-- links inside headers --*/
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+    color: #4c4c4b;
+    text-decoration: none!important;
+    opacity: 1
+}
+
+/*-- unordered lists, ordered lists, list items --*/
+ul, 
+ol,
+li {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+/*-- paragraph --*/
+p {
+    margin: 20px 0px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+/*-- links --*/
+a {
+    color: #4c7031;
+    text-decoration: none;
+    outline: none !important;
+}
+
+/*-- links that are buttons --*/
+a,
+.btn {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/*-- images --*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*-- what happens when an elements gets focus (when the user clicks or taps on an element or selects it with the keyboard's Tab key.) --*/
+:focus {
+    outline: 0;
+}
+
+
+/* header section start */
+
+.header_section {
+    width: 100%;
+    float: left;
+    text-align: center;
+    background-color: #ffffff;
+    height: auto;
+    background-size: 100%;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.header_main {
+    width: 100%;
+    float: left;
+    background: #ffffff;
+    height: 80px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: #4c7031;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #4c7031;
+    font-weight: bold;
+}
+
+.navbar {
+    padding: 20px 1rem;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+    font-size: 14px;
+    color: #4c7031;
+}
+
+.logo {}
+
+/* header section end */
+
+/* intro section start */
+
+.intro-bio_leftcolumn {
+    float: left;
+    width: 30%;
+    padding: 15px;
+}
+
+.intro-bio_rightcolumn {
+    float: left;
+    width: 60%;
+    padding: 10px;
+}
+
+.intro_text {
+    float: left;
+    font-size: 16px;
+    color: #4c4c4b;
+    text-align: left;
+}
+
+.intro_img {
+    margin: auto;
+    align-items: center;
+    max-width: 900px;
+    min-width: 300px; 
+}
+
+/* intro section end */
+
+/* about section start */
+
+.about_section {
+    width: 100%;
+    float: left;
+}
+
+.about_table {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    gap: 20px 20px;
+}
+
+.about_column {
+    flex: 40;
+}
+
+.about_taital {
+    width: 100%;
+    float: left;
+    font-size: 24px;
+    color: #4c7031;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+    align-items: center;
+    padding: 20px 10px;
+    margin: auto;
+    min-width: 300px;
+}
+
+.about_text {
+    float: left;
+    font-size: 16px;
+    color: #4c4c4b;
+    text-align: left;
+}
+
+.about_img {
+    margin: auto;
+    align-items: center;
+    max-width: 900px;
+    min-width: 300px; 
+}
+
+.read_bt {
+    width: 275px;
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.read_bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: #4c7031;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+}
+
+.read_bt a:hover {
+    color: #ffffff;
+    background-color: #f2ae1c;
+}
+
+/* about section end */
+
+/* events section start */
+
+.events_section{
+    width: 100%;
+    float: left;
+}
+
+.events_taital {
+    width: 100%;
+    float: left;
+    font-size: 50px;
+    color: #4c7031;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 6px;
+}
+
+.events_table {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    gap: 20px 20px;
+}
+
+.events_column {
+    flex: 0 0 33.3333%;
+}
+
+.events_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #4c4c4b;
+    margin: 0px;
+    text-align: center;
+    padding: 25px 25px;
+    min-width: 225px;
+}
+
+.events_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 250px;
+    padding: 10px 10px;
+}
+
+/* events section end */
+
+/* values section start */
+
+.values_section {
+    width: 100%;
+    float: left;
+}
+
+.values_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #4c7031;
+    font-weight: bold;
+    text-align: center;
+}
+
+.values_table {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    gap: 20px 20px;
+}
+
+.values_column {
+    flex: 30;
+}
+
+.values_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #4c4c4b;
+    margin: 0px;
+    text-align: center;
+    padding: 0px 30px;
+    min-width: 250px;
+}
+
+.values_img {
+    margin: auto;
+    align-items: center;
+    max-width: 200px;
+    min-width: 100px;
+}
+
+.values_section_2 {
+    width: 100%;
+    float: left;
+    padding-top: 50px;
+}
+
+.decorate_text {
+    width: 100%;
+    font-size: 28px;
+    color: #4c7031;
+    padding-top: 30px;
+    text-align: center;
+}
+
+.tation_text {
+    width: 100%;
+    font-size: 14px;
+    color: #4c7031;
+    margin: 0px;
+    text-align: center;
+}
+
+.readmore_bt {
+    width: 175px;
+    padding-top: 40px;
+    margin: 0 auto;
+    display: flex;
+    display: none;
+    padding-bottom: 40px;
+}
+
+.readmore_bt a {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    background-color: #070603;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    text-transform: uppercase;
+}
+
+.readmore_bt a:hover {
+    color: #ffffff;
+    background-color: #f76d37;
+}
+
+/* values section end */
+
+/* bio section start */
+
+.bio_section {
+    width: 100%;
+    float: left;
+}
+
+.stories_taital {
+    width: 100%;
+    float: left;
+    font-size: 42px;
+    color: #4c7031;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flex_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bio_row {
+    display: flex;
+    flex-flow: wrap;
+    padding: 30px;
+    align-items: center;
+}
+
+.bio_column {
+    flex: 1;
+    flex-wrap: column wrap;
+}
+
+.bio_img_card {
+    float: right;
+    max-width: 400px;
+    max-height: 500px;
+    min-width: 300px;
+    margin: auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.bio_story {
+    margin: auto;
+    width: 80%;
+    min-width: 300px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.title_bio {
+  color: #4c4c4b;
+  font-size: 14px;
+  margin: 0px;
+}
+
+button_bio {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+h1_bio {
+    color: #4c4c4b;
+    text-decoration: none!important;
+    opacity: 1;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+a_bio {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button_bio:hover, a_bio:hover {
+  opacity: 0.7;
+}
+
+/* bio section end */
+
+/* newsletter section start */
+
+.newsletter_section {
+    width: 100%;
+    float: left;
+}
+
+.newsletter_taital {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    text-align: right;
+    justify-content: center;
+    padding: 0px 100px;
+    min-width: 250px;
+}
+
+.newsletter_teaser_section {
+    width: 100%;
+    float: left;
+}
+
+.newsletter_intro {
+    display: flex;
+    min-height: 200px;
+    width: 100%;
+    position: relative;
+    padding: 15px 100px 15px 100px;
+}
+                       
+.newsletter_intro_img {
+    min-width: 250px;
+}
+
+.newsletter_credits {
+    text-align: left;
+    min-width: 150px;
+    position: absolute;
+    align-self: center;
+}
+
+.newsletter_table {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: auto;
+    width: 90%;
+    padding: 15px 60px 15px 60px;
+}
+
+.newsletter_teaser_table {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 90%;
+    padding: 15px 75px 15px 75px;
+}
+
+.newsletter_column {
+    flex: 50;
+    align-items: flex-start;
+}
+
+.newsletter_img {
+    width: 100%;
+    float: left;
+    padding: 15px 15px;
+    align-self: center;
+    min-width: 250px;
+}
+
+.newsletter_longramble {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    align-items: center;
+}
+
+.newsletter_header {
+    width: 100%;
+    float: left;
+    text-align: right;
+    font-size:20px;
+    line-height: 30px;
+}
+
+.newsletter_text {
+    width: 100%;
+    float: left;
+    padding: 15px 10px 15px 10px;
+}
+
+.newsletter_teaser_text {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 15px 10px 15px 10px;
+}
+
+.newsletter_caption {
+    width: 100%;
+    float: left;
+    padding: 15px 15px;
+}
+
+/* engagement section start */
+
+.engagement_section {
+    width: 100%;
+    float: left;
+}
+
+.engagement_taital {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    color: #4c7031;
+    font-weight: bold;
+    text-align: center;
+}
+
+.engagement_intro {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    margin: auto;
+    max-width: 900px;
+}
+
+.engagement_table {
+    display: flex;
+    flex-flow: row wrap;
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+    gap: 20px 20px;
+}
+
+.engagement_column {
+    flex: 50;
+    margin: auto;
+}
+
+.engagement_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #4c4c4b;
+    text-align: center;
+    padding: 0px 30px;
+    min-width: 250px;
+}
+
+.engagement_img {
+    margin: auto;
+    align-items: center;
+    min-width: 500px;
+}
+    
+/* engagement section end */
+
+/* visit section start */
+
+.visit_section {
+    width: 100%;
+    float: left;
+}
+
+.visit_text {
+    width: 100%;
+    float: left;
+    font-size: 40px;
+    text-align: center;
+    color:  #4c7031;
+    font-weight: bold;
+}
+
+.visit_details {
+    width: 100%;
+    float: left;
+    font-size: 18px;
+    align-items: center;
+    text-align: center;
+    color: #4c4c4b;
+    line-height: 28px;
+    padding: 10px 20px
+}
+
+.visit_section_2 {
+    width: 100%;
+    float: left;
+    align-items: center;
+    text-align: center;
+}
+
+.mail_section {
+    width: 100%;
+    float: left;
+    background-image: url(../images/img-9.jpeg);
+    height: auto;
+    padding: 23px 70px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.long_text {
+    width: 52%;
+    margin: 0 auto;
+    font-size: 16px;
+    text-align: center;
+    color: #b2afaf;
+    padding-top: 30px;
+    display: flex;
+}
+
+.email_text {
+    width: 100%;
+    float: left;
+    margin-top: 20px;
+}
+
+.email-bt {
+    color: #080707;
+    width: 100%;
+    height: 55px;
+    font-size: 14px;
+    padding: 10px 30px;
+    border: 0px;
+    border-radius: 30px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+.massage-bt {
+    color: #080707;
+    width: 100%;
+    height: 150px;
+    font-size: 14px;
+    padding: 30px;
+    border: 0px;
+    border-radius: 50px;
+    background-color:  rgba(255,255,255,0.7);
+}
+
+.send_btn {
+    width: 170px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.main_bt a {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #4c7031;
+    padding: 15px 50px 12px 50px;
+    border-radius: 30px;
+    display: block;
+}
+
+.main_bt a:hover {
+    color: #ffffff;
+    background-color: #f2ae1c;
+}
+
+.padding_0 {
+    padding: 0px;
+}
+
+/* contact section end */
+
+/* footer section start */
+
+.footer_section {
+    width: 100%;
+    float: left;
+    background-color: #4c7031;
+    height: auto;
+    padding: 95px 0px;
+}
+
+.useful_text {
+    width: 100%;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer_text {
+    width: 100%;
+    float: left;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.footer_menu {
+    width: 100%;
+    float: left;
+}
+
+.footer_menu ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer_menu li {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.footer_menu li a {
+    color: #ffffff;
+}
+
+.footer_menu li a:hover {
+    color:  #f2ae1c;
+}
+
+.dummy_text {
+    width: 30%;
+    float: left;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 0px;
+}
+
+.location_text {
+    width: 100%;
+    float: left;
+}
+
+.location_text ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.location_text li {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 0px 0px 5px 0px;
+}
+
+.location_text li a {
+    color: #ffffff;
+}
+
+.location_text li a:hover {
+    color:  #f2ae1c;
+}
+
+.padding_left_10 {
+    padding-left: 10px;
+}
+
+
+/* footer section end */
+
+/* copyright section start */
+
+.copyright_section {
+    width: 100%;
+    float: left;
+    background-color: #fff4e8;
+    height: auto;
+}
+
+.copyright_text {
+    width: 100%;
+    float: left;
+    font-size: 16px;
+    color: #252525;
+    text-align: center;
+    margin-left: 0px;
+}
+
+.copyright_text a {
+    color: #252525;
+}
+
+.copyright_text a:hover {
+    color:  #f2ae1c;
+}
+
+
+/* copyright section end */
+
+.margin_top90 {
+    margin-top: 90px;
+}
