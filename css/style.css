@@ -8,18 +8,6 @@
 /*****---------------------------------------- 1) font-family: 'Lato', sans-serif;
  ----------------------------------------*****/
 
-/* <weight>: Use a value from 100 to 900 */
-/* <uniquifier>: Use a unique and descriptive class name */
-
-.roboto-<uniquifier> {
-  font-family: "Roboto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
 .roboto-thin {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
@@ -70,6 +58,7 @@
 
 
 
+
 /*--------------------------------------------------------------------- skeleton ---------------------------------------------------------------------*/
 
 * {
@@ -91,7 +80,6 @@ html {
 
 body {
     color: #000000;
-    font-size: 14px;
     font-family: Roboto;
     background-color: #ffffff;
     padding: 20px;
@@ -159,8 +147,8 @@ li {
 
 /*-- paragraph --*/
 p {
-    font-weight: 300;
-    font-size: 15px;
+    font-weight: 400;
+    font-size: 16px;
     line-height: 24px;
 }
 
@@ -194,6 +182,39 @@ img {
     outline: 0;
 }
 
+/*-- contact form inputs --*/
+label {
+    font-size: 12px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  font-size: 10px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+/*--------------------------------------------------------------------- SECTION STYLES ---------------------------------------------------------------------*/
 
 /* header section start */
 
@@ -216,7 +237,7 @@ img {
     grid-template-areas:
 	"image_bio text_bio";
     grid-template-columns: 1fr 2fr;
-    gap: 3px;
+    gap: 20px;
     padding: 40px 20px;
 }
 
@@ -226,14 +247,14 @@ img {
 
 .intro-bio_textcolumn {
     grid-area: text_bio;
-    padding: 25px;
+    padding: 10px;
 }
 
 .intro_img {
     margin: auto;
     align-items: center;
     max-width: 900px;
-    min-width: 300px; 
+    min-width: 400px; 
 }
 
 /* intro section end */
@@ -242,120 +263,71 @@ img {
 /* footer section start */
 
 .footer_section {
+    display: grid;
+    place-items: top;
+    grid-template-areas:
+	"contact_form useful_info";
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
     width: 100%;
-    float: left;
-    background-color: #4c7031;
+    background-color: #fffff2;
     height: auto;
-    padding: 95px 0px;
+    padding: 40px 20px;
 }
 
-.useful_text {
+.footer_menu {
+    grid-area: site_map;
+}
+
+.footer_contact {
+    grid-area: contact_form;
     width: 100%;
-    font-size: 24px;
-    color: #ffffff;
-    margin-bottom: 15px;
-    font-weight: bold;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.footer_useful-info {
+    grid-area: useful_info;
+    font-size: 14px;
 }
 
 .footer_text {
     width: 100%;
     float: left;
     font-size: 14px;
-    color: #ffffff;
-    margin: 0px;
 }
 
-.footer_menu {
-    width: 100%;
-    float: left;
-}
-
-.footer_menu ul {
+.footer_text ul {
     margin: 0px;
     padding: 0px;
-}
-
-.footer_menu li {
-    font-size: 14px;
-    color: #ffffff;
-}
-
-.footer_menu li a {
-    color: #ffffff;
-}
-
-.footer_menu li a:hover {
-    color:  #f2ae1c;
-}
-
-.dummy_text {
-    width: 30%;
-    float: left;
-    font-size: 14px;
-    color: #ffffff;
-    margin: 0px;
-}
-
-.location_text {
-    width: 100%;
-    float: left;
-}
-
-.location_text ul {
-    margin: 0px;
-    padding: 0px;
-}
-
-.location_text li {
-    font-size: 14px;
-    color: #ffffff;
-    padding: 0px 0px 5px 0px;
-}
-
-.location_text li a {
-    color: #ffffff;
-}
-
-.location_text li a:hover {
-    color:  #f2ae1c;
 }
 
 .padding_left_10 {
     padding-left: 10px;
 }
 
-
 /* footer section end */
 
-/* copyright section start */
 
-.copyright_section {
-    width: 100%;
-    float: left;
-    background-color: #fff4e8;
-    height: auto;
+/*-- responsive styles for different devices and screen sizes --*/
+/* Extra small devices (phones, 600px and down) */
+
+@media only screen and (max-width: 600px) {
+    p {
+	font-size: 20px;
+    }
 }
 
-.copyright_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #252525;
-    text-align: center;
-    margin-left: 0px;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
 }
 
-.copyright_text a {
-    color: #252525;
-}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {...}
 
-.copyright_text a:hover {
-    color:  #f2ae1c;
-}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
 
-
-/* copyright section end */
-
-.margin_top90 {
-    margin-top: 90px;
-}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
