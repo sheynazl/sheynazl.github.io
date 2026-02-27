@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 866 343.98">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: PlusJakartaSans-ExtraBold, 'Plus Jakarta Sans';
+        font-size: 120px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        font-family: PlusJakartaSans-Regular, 'Plus Jakarta Sans';
+        font-size: 60px;
+        font-variation-settings: 'wght' 400;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-4 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-5 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-6 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-7 {
+        letter-spacing: -.03em;
+      }
+
+      .cls-8 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <line class="cls-3" y1="174.73" x2="866" y2="174.73"/>
+  <g>
+    <text class="cls-1" transform="translate(11.33 104.7)"><tspan x="0" y="0" xml:space="preserve">S H E Y N A    Z L</tspan></text>
+    <text class="cls-2" transform="translate(68.35 316.19)"><tspan class="cls-6" x="0" y="0">W</tspan><tspan x="56.64" y="0">ri</tspan><tspan class="cls-5" x="90.66" y="0">t</tspan><tspan x="112.74" y="0">e</tspan><tspan class="cls-6" x="149.64" y="0">r</tspan><tspan x="167.52" y="0">. </tspan><tspan class="cls-7" x="194.88" y="0">R</tspan><tspan x="231.54" y="0">es</tspan><tspan class="cls-8" x="298.98" y="0">e</tspan><tspan x="335.28" y="0">arche</tspan><tspan class="cls-6" x="497.15" y="0">r</tspan><tspan x="515.03" y="0">. Edi</tspan><tspan class="cls-4" x="632.87" y="0">t</tspan><tspan x="654.95" y="0">o</tspan><tspan class="cls-6" x="694.25" y="0">r</tspan><tspan x="712.13" y="0">.</tspan></text>
+  </g>
+</svg>
